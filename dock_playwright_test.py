@@ -1,7 +1,6 @@
 import re
 from playwright.sync_api import sync_playwright
-from playwright.sync_api import expect
-from datetime import date
+# from playwright.sync_api import expect
 from time import sleep
 
 with sync_playwright() as p:
