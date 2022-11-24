@@ -1,6 +1,5 @@
 from playwright.sync_api import sync_playwright, expect
 from time import sleep
-import re
 
 
 url = 'https://dock.tech/'
