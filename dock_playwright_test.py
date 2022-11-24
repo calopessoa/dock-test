@@ -1,5 +1,6 @@
 from playwright.sync_api import sync_playwright, expect
 from time import sleep
+import re
 
 
 url = 'https://dock.tech/'
@@ -11,7 +12,7 @@ def test_dock_homepage():
     page = browser.new_page()
     page.goto(url)
 
-    cookies_accept = page.locator('xpath=//*[@id="onetrust-accept-btn-handler"]')
+    cookies_accept = page.locator('xpath=//button[@id="onetrust-accept-btn-handler"]')
     cookies_accept.click()
     sleep(1)
 
@@ -19,6 +20,16 @@ def test_dock_homepage():
     translate_btn.click()
     english_translation = page.locator('xpath=//*[@id="menu-menu-principal"]/div/div/div[2]/a[1]')
     english_translation.click()
+
+    active_acc = page.locator('xpath=//*[@id="Wrapper"]/section[2]/div/div/div[1]/h2')
+    expect(active_acc).to_contain_text("69")
+    expect(active_acc).to_contain_text( " MILLION ACTIVE ACCOUNTS")
+
+    annual_growth_rate = page.locator('xpath=//*[@id="Wrapper"]/section[2]/div/div/div[4]/h2')
+    expect(annual_growth_rate).to_contain_text("45%")
+    expect(annual_growth_rate).to_contain_text(" CAGR SINCE 2014")
+
+    page.pause()
 
     # form filling
     page.locator('xpath=//*[@id="lb-nome"]').fill('Carlos tester')
