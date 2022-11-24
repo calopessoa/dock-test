@@ -9,3 +9,7 @@ source .venv/bin/activate
 pip install pytest-playwright
 
 playwright install
+
+# To run the tests
+
+pytest
