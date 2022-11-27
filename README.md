@@ -36,4 +36,5 @@ pytest
 
 ## To-Do:
 
-CI/CD Github Actions Integration
+Investigate how to test the accessibility tools
+- this author recommends further improvement with the audio helper in english

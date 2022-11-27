@@ -13,3 +13,7 @@ playwright install
 # To run the tests
 
 pytest
+
+# Try playwright test generator!
+
+playwright codegen
