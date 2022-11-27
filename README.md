@@ -5,6 +5,7 @@
 ## Tools used:
 - Python
 - Playwright
+- Github Actions (CI/CD)
 
 
 ## Usage:
