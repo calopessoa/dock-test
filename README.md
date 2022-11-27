@@ -34,7 +34,3 @@ Finally, run the script for Playwright:
 ```bash
 pytest
 ```
-
-## To-Do:
-
-CI/CD Github Actions Integration
