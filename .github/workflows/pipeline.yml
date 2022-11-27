@@ -21,4 +21,4 @@ jobs:
       - name: Ensure browsers are installed
         run: python -m playwright install --with-deps
       - name: Run the e2e test suite
-        run: pytest
+        run: xvfb-run pytest

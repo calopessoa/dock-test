@@ -28,8 +28,6 @@ def test_dock_homepage():
     expect(annual_growth_rate).to_contain_text("45%")
     expect(annual_growth_rate).to_contain_text(" CAGR SINCE 2014")
 
-    page.pause()
-
     # form filling
     page.locator('xpath=//*[@id="lb-nome"]').fill('Carlos tester')
     page.locator('xpath=//*[@id="PhoneNumber2"]').fill('83999999999')
