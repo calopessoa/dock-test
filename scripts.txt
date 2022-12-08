@@ -10,6 +10,10 @@ pip install pytest-playwright
 
 playwright install
 
+# BDD test generator, using pytest-bdd
+
+pytest-bdd generate PATHFILE.feature > FILE_TEST.py
+
 # To run the tests
 
 pytest
