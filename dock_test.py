@@ -5,7 +5,7 @@ from time import sleep
 url = 'https://dock.tech/'
 
 
-def test_dock_homepage():
+def test_playwright():
   with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
     page = browser.new_page()
