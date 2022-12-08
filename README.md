@@ -1,6 +1,7 @@
 # E2E Automated Test for Dock Home Page
 
 ### Project that tests Dock access to its home page and fill its contact form to send it.
+[![Dock - Financial Technologies](https://github.com/calopessoa/dock-test/actions/workflows/pipeline.yml/badge.svg)](https://github.com/calopessoa/dock-test/actions/workflows/pipeline.yml)
 
 ## Tools used:
 - Python
