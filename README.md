@@ -4,6 +4,7 @@
 
 ## Tools used:
 - Python
+- Pytest-BDD
 - Playwright
 - Github Actions (CI/CD)
 
@@ -29,7 +30,7 @@ python3 -m venv .venv && source .venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
-Finally, run the script for Playwright:
+Finally, run the script for Playwright (it'll run both test files, with and without BDD):
 
 ```bash
 pytest
